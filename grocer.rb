@@ -46,7 +46,7 @@ def apply_coupons(cart, coupons)
        else
          cart.push({
            :item => "#{current_item[:item]} W/COUPON",
-           :price => coupon[]
+           :price => coupons[]
          })
       end
     end
