@@ -67,7 +67,7 @@ def apply_clearance(cart)
   i=0
   while i < cart.length
   if cart[i][:clearance]
-    
+    cart[i][:price] = 
 end
 end
 
