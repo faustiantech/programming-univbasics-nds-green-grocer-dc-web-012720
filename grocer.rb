@@ -35,7 +35,7 @@ end
 
 def apply_coupons(cart, coupons)
   i=0
-  while i < cart.length do
+  while i < coupons.length do
     current_item = cart[i]
     if find_item_by_name_in_collection(current_item[:item], coupons)
       #found coupon matching item in cart. now apply
