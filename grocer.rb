@@ -36,20 +36,7 @@ end
 def apply_coupons(cart, coupons)
   i=0
   while i < coupons.length do
-    current_item = cart[i]
-    if find_item_by_name_in_collection(current_item[:item], coupons)
-      #found coupon matching item in cart. now apply
-      if find_item_by_name_in_collection("#{current_item[:item]} W/COUPON",cart)
-        while current_item[:count] > coupons[:num]
-        
-         end
-       else
-         cart.push({
-           :item => "#{current_item[:item]} W/COUPON",
-           :price => coupons[]
-         })
-      end
-    end
+   
     i +=1
   end
 end
